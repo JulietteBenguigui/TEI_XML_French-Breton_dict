@@ -28,7 +28,9 @@
                   <orth></orth>
                </form>
                <gramGrp>
-                  <gram></gram>
+                  <gen></gen>
+                  <pos></pos>
+                  <number></number>
                </gramGrp>
                <sense></sense>
                <cit type="translation" xml:lang="en">
