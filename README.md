@@ -8,4 +8,5 @@ The project is aimed to serve linguists, celtic history specialists or philologi
 
 The encoding is particularly tailored for comparative linguistics projects as the 
 
-## Licence 
+## Licence
+This project is under the MIT License. Please check the LICENSE file in the repository for more information. 
