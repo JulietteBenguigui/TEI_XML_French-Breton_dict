@@ -4,19 +4,59 @@
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
-      <fileDesc>
-         <titleStmt>
-            <title>Title</title>
-         </titleStmt>
-         <publicationStmt>
-            <p>Publication Information</p>
-         </publicationStmt>
-         <sourceDesc>
-            <p>Information about the source</p>
-         </sourceDesc>
-      </fileDesc>
+     <fileDesc>
+        <titleStmt>
+           <title></title>
+        </titleStmt>
+        <publicationStmt>
+           <distributor></distributor>
+           <date></date>
+           <availability>
+              <licence>
+                 <ref/>
+              </licence>
+           </availability>
+        </publicationStmt>
+        <sourceDesc>
+            <p></p>
+        </sourceDesc>
+     </fileDesc>
+     
+     <encodingDesc>
+        <p>
+         <persName></persName>
+           <date></date>
+           <orgName></orgName>
+        </p>
+     </encodingDesc>
+     
+     <!-- VERIFIER TOUT CA -->
+     <profileDesc> 
+        <langUsage>
+           <language ident=""></language>
+        </langUsage>
+        <textDesc n="">
+           <channel></channel>
+           <constitution/>
+           <derivation/>
+           <domain/>
+           <factuality></factuality>
+           <interaction></interaction>
+           <preparedness></preparedness>
+           <purpose></purpose>
+        </textDesc>
+        <settingDesc>
+           <setting>
+              <name></name>
+              <time></time>
+           </setting>
+        </settingDesc>
+     </profileDesc>
+ 
   </teiHeader>
-  <text>
+  
+   
+   <text>
       <body>
          <head></head>
          <div>
@@ -26,12 +66,12 @@
             <entry>
                <form>
                   <orth></orth>
+                  <gramGrp>
+                     <gen></gen>
+                     <pos></pos>
+                     <number></number>
+                  </gramGrp>
                </form>
-               <gramGrp>
-                  <gen></gen>
-                  <pos></pos>
-                  <number></number>
-               </gramGrp>
                <sense></sense>
                <cit type="translation" xml:lang="en">
                   <quote>horrifier</quote>
