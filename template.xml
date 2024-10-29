@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
-	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI SYSTEM "dtd.dtd">
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
      <fileDesc>
         <titleStmt>
            <title></title>
         </titleStmt>
+        <editionStmt>
+           <edition></edition>
+           <respStmt>
+              <resp></resp>
+              <name></name>
+           </respStmt>
+        </editionStmt>
         <publicationStmt>
            <distributor></distributor>
            <date></date>
@@ -23,11 +28,12 @@
      </fileDesc>
      
      <encodingDesc>
-        <p>
-         <persName></persName>
-           <date></date>
-           <orgName></orgName>
-        </p>
+        <projectDesc>
+           <p></p>
+        </projectDesc>
+        <samplingDecl>
+           <p></p>
+        </samplingDecl>
      </encodingDesc>
      
      <!-- VERIFIER TOUT CA -->
@@ -45,12 +51,6 @@
            <preparedness></preparedness>
            <purpose></purpose>
         </textDesc>
-        <settingDesc>
-           <setting>
-              <name></name>
-              <time></time>
-           </setting>
-        </settingDesc>
      </profileDesc>
  
   </teiHeader>
