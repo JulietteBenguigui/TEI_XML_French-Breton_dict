@@ -1,201 +1,70 @@
 <?xml encoding="UTF-8"?>
 
-<!ELEMENT ns1:TEI (ns1:teiHeader,ns1:text)>
-<!ATTLIST ns1:TEI
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
+<!-- TEI HEADER -->
+<!ELEMENT TEI (teiHeader, text)>
+<!ATTLIST TEI xmlns CDATA #IMPLIED>
 
-<!ELEMENT ns1:teiHeader (ns1:fileDesc,ns1:encodingDesc,ns1:profileDesc)>
-<!ATTLIST ns1:teiHeader
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
+<!ELEMENT teiHeader (fileDesc, encodingDesc?, profileDesc?)>
 
-<!ELEMENT ns1:text (ns1:body)>
-<!ATTLIST ns1:text
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
+<!ELEMENT fileDesc (titleStmt, editionStmt, publicationStmt, sourceDesc)>
+<!ELEMENT titleStmt (title)>
+<!ELEMENT title (#PCDATA)>
 
-<!ELEMENT ns1:fileDesc (ns1:titleStmt,ns1:publicationStmt,
-                        ns1:sourceDesc)>
-<!ATTLIST ns1:fileDesc
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
+<!ELEMENT editionStmt (edition, respStmt) >
+<!ELEMENT edition (#PCDATA) >
+<!ELEMENT respStmt (resp, name) >
+<!ELEMENT resp (#PCDATA) >
+<!ELEMENT name (#PCDATA) >
 
-<!ELEMENT ns1:encodingDesc (ns1:p)>
-<!ATTLIST ns1:encodingDesc
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
+<!ELEMENT publicationStmt (distributor?, date?, availability)>
+<!ELEMENT distributor (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT availability (licence)>
+<!ELEMENT licence (ref?)>
+<!ELEMENT ref (#PCDATA)>
 
-<!ELEMENT ns1:profileDesc (ns1:langUsage,ns1:textDesc,ns1:settingDesc)>
-<!ATTLIST ns1:profileDesc
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
+<!ELEMENT sourceDesc (p)>
+<!ELEMENT p (#PCDATA)>
 
-<!ELEMENT ns1:body (ns1:head,ns1:div)>
-<!ATTLIST ns1:body
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
+<!ELEMENT encodingDesc (projectDesc, samplingDecl) >
+<!ELEMENT projectDesc (p) >
+<!ELEMENT samplingDecl (p) >
 
-<!ELEMENT ns1:titleStmt (ns1:title)>
-<!ATTLIST ns1:titleStmt
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
+<!ELEMENT profileDesc (langUsage?, textDesc?)>
+<!ELEMENT langUsage (language)>
+<!ELEMENT language (#PCDATA)>
+<!ATTLIST language ident CDATA #IMPLIED>
 
-<!ELEMENT ns1:publicationStmt (ns1:distributor,ns1:date,
-                               ns1:availability)>
-<!ATTLIST ns1:publicationStmt
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
+<!ELEMENT textDesc (channel?, constitution?, derivation?, domain?, factuality?, interaction?, preparedness?, purpose?)>
+<!ATTLIST textDesc n CDATA #IMPLIED>
+<!ELEMENT channel (#PCDATA)>
+<!ELEMENT constitution (#PCDATA)>
+<!ELEMENT derivation (#PCDATA)>
+<!ELEMENT domain (#PCDATA)>
+<!ELEMENT factuality (#PCDATA)>
+<!ELEMENT interaction (#PCDATA)>
+<!ELEMENT preparedness (#PCDATA)>
+<!ELEMENT purpose (#PCDATA)>
 
-<!ELEMENT ns1:sourceDesc (ns1:p)>
-<!ATTLIST ns1:sourceDesc
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
+<!ELEMENT text (body)>
+<!ELEMENT body (head?, div)>
+<!ELEMENT head (#PCDATA)>
 
-<!ELEMENT ns1:langUsage (ns1:language)>
-<!ATTLIST ns1:langUsage
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
+<!ELEMENT div (head?, pb?, fw?, entry*)>
+<!ELEMENT pb EMPTY>
+<!ELEMENT fw (#PCDATA)>
 
-<!ELEMENT ns1:textDesc (ns1:channel,ns1:constitution,ns1:derivation,
-                        ns1:domain,ns1:factuality,ns1:interaction,
-                        ns1:preparedness,ns1:purpose)>
-<!ATTLIST ns1:textDesc
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'
-  n CDATA #REQUIRED>
+<!ELEMENT entry (form, sense?, cit*)>
+<!ELEMENT form (orth, gramGrp?)>
+<!ELEMENT orth (#PCDATA)>
+<!ELEMENT gramGrp (gen?, pos?, number?)>
+<!ELEMENT gen (#PCDATA)>
+<!ELEMENT pos (#PCDATA)>
+<!ELEMENT number (#PCDATA)>
 
-<!ELEMENT ns1:settingDesc (ns1:setting)>
-<!ATTLIST ns1:settingDesc
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
+<!ELEMENT sense (#PCDATA)>
 
-<!ELEMENT ns1:div (ns1:head,ns1:pb,ns1:fw,ns1:entry)>
-<!ATTLIST ns1:div
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:title EMPTY>
-<!ATTLIST ns1:title
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:distributor EMPTY>
-<!ATTLIST ns1:distributor
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:availability (ns1:licence)>
-<!ATTLIST ns1:availability
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:language EMPTY>
-<!ATTLIST ns1:language
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'
-  ident CDATA #REQUIRED>
-
-<!ELEMENT ns1:channel EMPTY>
-<!ATTLIST ns1:channel
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:constitution EMPTY>
-<!ATTLIST ns1:constitution
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:derivation EMPTY>
-<!ATTLIST ns1:derivation
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:domain EMPTY>
-<!ATTLIST ns1:domain
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:factuality EMPTY>
-<!ATTLIST ns1:factuality
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:interaction EMPTY>
-<!ATTLIST ns1:interaction
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:preparedness EMPTY>
-<!ATTLIST ns1:preparedness
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:purpose EMPTY>
-<!ATTLIST ns1:purpose
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:setting (ns1:name,ns1:time)>
-<!ATTLIST ns1:setting
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:pb EMPTY>
-<!ATTLIST ns1:pb
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:fw EMPTY>
-<!ATTLIST ns1:fw
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:entry (ns1:form,ns1:sense,ns1:cit+)>
-<!ATTLIST ns1:entry
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:licence (ns1:ref)>
-<!ATTLIST ns1:licence
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:name EMPTY>
-<!ATTLIST ns1:name
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:time EMPTY>
-<!ATTLIST ns1:time
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:form (ns1:orth,ns1:gramGrp)>
-<!ATTLIST ns1:form
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:sense EMPTY>
-<!ATTLIST ns1:sense
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:ref EMPTY>
-<!ATTLIST ns1:ref
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:orth EMPTY>
-<!ATTLIST ns1:orth
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:gramGrp (ns1:gen,ns1:pos,ns1:number)>
-<!ATTLIST ns1:gramGrp
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:gen EMPTY>
-<!ATTLIST ns1:gen
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:pos EMPTY>
-<!ATTLIST ns1:pos
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:number EMPTY>
-<!ATTLIST ns1:number
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:date EMPTY>
-<!ATTLIST ns1:date
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:p (ns1:persName,ns1:date,ns1:orgName)?>
-<!ATTLIST ns1:p
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:persName EMPTY>
-<!ATTLIST ns1:persName
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:orgName EMPTY>
-<!ATTLIST ns1:orgName
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:head EMPTY>
-<!ATTLIST ns1:head
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
-
-<!ELEMENT ns1:cit (ns1:cit|ns1:quote)*>
-<!ATTLIST ns1:cit
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'
-  type NMTOKEN #REQUIRED
-  xml:lang NMTOKEN #IMPLIED>
-
-<!ELEMENT ns1:quote (#PCDATA)>
-<!ATTLIST ns1:quote
-  xmlns:ns1 CDATA #FIXED 'http://www.tei-c.org/ns/1.0'>
+<!ELEMENT cit (quote, cit?)>
+<!ATTLIST cit type (translation | example) #REQUIRED
+                    xml:lang CDATA #IMPLIED>
+<!ELEMENT quote (#PCDATA)>
