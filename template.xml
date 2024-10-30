@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI SYSTEM "dtd.dtd">
+<!DOCTYPE TEI SYSTEM "dict_dtd.dtd">
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
      <fileDesc>
@@ -27,7 +27,7 @@
         </sourceDesc>
      </fileDesc>
      
-     <encodingDesc>
+     <encodingDesc xml:lang="">
         <projectDesc>
            <p></p>
         </projectDesc>
@@ -36,10 +36,9 @@
         </samplingDecl>
      </encodingDesc>
      
-     <!-- VERIFIER TOUT CA -->
-     <profileDesc> 
+     <profileDesc xml:lang=""> 
         <langUsage>
-           <language ident=""></language>
+           <language n="" ident=""></language>
         </langUsage>
         <textDesc n="">
            <channel></channel>
@@ -59,12 +58,12 @@
    <text>
       <body>
          <head></head>
-         <div>
+         <div xml:id="dict_corpus">
             <head></head>
-            <pb/>
+            <pb n=""/>
             <fw></fw>
-            <entry>
-               <form>
+            <entry xml:id="entry1">
+               <form n="">
                   <orth></orth>
                   <gramGrp>
                      <gen></gen>
@@ -72,17 +71,16 @@
                      <number></number>
                   </gramGrp>
                </form>
-               <sense></sense>
-               <cit type="translation" xml:lang="en">
-                  <quote>horrifier</quote>
-               </cit>
-               <cit type="example">
-                  <quote>she was horrified at the expense.</quote>
-                  <cit type="translation" xml:lang="en">
-                     <quote>elle était horrifiée par la dépense.</quote>
+               <sense>
+                  <cit type="example" xml:lang="">
+                     <quote></quote>
                   </cit>
-                </cit>
-              </entry>
+                  <cit type="translation" xml:lang="">
+                     <quote></quote>
+                  </cit>
+               </sense>
+               <note></note>
+            </entry>
          </div>
       </body>
   </text>
