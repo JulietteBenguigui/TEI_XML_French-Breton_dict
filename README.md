@@ -15,3 +15,7 @@ The encoding framework implemented in this project follows the TEI Guidelines, w
 ## License
 
 This project is under the MIT License. Please check the LICENSE file in the repository for more information.
+
+## Repository organisation
+- `~/` contains the schema and template files, as well as the README and LICENSE documents.
+- `~/raw_data` contains the sample in PDF and JPEG formats.
