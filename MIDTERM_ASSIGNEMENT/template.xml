@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "dict_dtd.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+     <fileDesc>
+        <titleStmt>
+           <title></title>
+        </titleStmt>
+        <editionStmt>
+           <edition></edition>
+           <respStmt>
+              <resp></resp>
+              <name></name>
+           </respStmt>
+        </editionStmt>
+        <publicationStmt>
+           <distributor></distributor>
+           <date></date>
+           <availability>
+              <licence>
+                 <ref/>
+              </licence>
+           </availability>
+        </publicationStmt>
+        <sourceDesc>
+            <p></p>
+        </sourceDesc>
+     </fileDesc>
+     
+     <encodingDesc xml:lang="">
+        <projectDesc>
+           <p></p>
+        </projectDesc>
+        <samplingDecl>
+           <p></p>
+        </samplingDecl>
+     </encodingDesc>
+     
+     <profileDesc xml:lang=""> 
+        <langUsage>
+           <language n="" ident=""></language>
+        </langUsage>
+        <textDesc n="">
+           <channel></channel>
+           <constitution/>
+           <derivation/>
+           <domain/>
+           <factuality></factuality>
+           <interaction></interaction>
+           <preparedness></preparedness>
+           <purpose></purpose>
+        </textDesc>
+     </profileDesc>
+ 
+  </teiHeader>
+  
+   
+   <text>
+      <body>
+         <head></head>
+         <div xml:id="dict_corpus">
+            <head></head>
+            <pb n=""/>
+            <fw></fw>
+            <entry xml:id="entry1">
+               <form n="">
+                  <orth></orth>
+                  <gramGrp>
+                     <gen></gen>
+                     <pos></pos>
+                     <number></number>
+                  </gramGrp>
+               </form>
+               <sense>
+                  <cit type="example" xml:lang="">
+                     <quote></quote>
+                  </cit>
+                  <cit type="translation" xml:lang="">
+                     <quote></quote>
+                  </cit>
+               </sense>
+               <note></note>
+            </entry>
+         </div>
+      </body>
+  </text>
+</TEI>

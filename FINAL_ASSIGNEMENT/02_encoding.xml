@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="customization.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Dictionnaire Breton-François</title>
+            <title type="extended">Dictionnaire breton-français du dialecte de Vannes / de Pierre de Châlons ; réédité et augmenté par J. Loth</title>
+            <author>
+               <persName>Châlons, Pierre de (1641-1718)</persName>
+            </author>
+            <respStmt>
+               <resp>Transcription and annotation</resp>
+               <name>Juliette Benguigui</name>
+            </respStmt>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <name>J. Plihon (Rennes)</name>
+               <name>et L. Hervé (Rennes)</name>
+            </edition>
+         </editionStmt>
+         <publicationStmt>
+            <publisher>Ecole nationale des chartes</publisher>
+            <date when="2025">2025</date>
+            <availability>
+               <licence>
+                  <ref>https://creativecommons.org/licenses/by-nc/4.0/</ref>
+               </licence>
+               <p>Consultable en ligne</p>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Dictionnaire breton-français du dialecte de Vannes</title>
+               <author>Châlons, Pierre de (1641-1718)</author>
+               <publisher>J. Plihon et L. Hervé (Rennes)</publisher>
+               <date when="1895">1895</date>
+               <extent>1 vol. ([VI]-115 p.) ; in-8</extent>
+               <idno type="ark">ark:/12148/bpt6k113565r</idno>
+               <ref target="http://catalogue.bnf.fr/ark:/12148/cb308355735">Notice du catalogue BnF</ref>
+               <note>Digitized and annotated 19th-century Breton-French printed dictionary, enriched with linguistic information.</note>
+               <note>Source: Bibliothèque nationale de France, département Littérature et art, 8-Z-14097 (1)</note>
+               <note>Digital conservation: Bibliothèque nationale de France</note>
+               <note>Online publication: 15/10/2007</note>
+               <note>Collections: Bibliothèque bretonne armoricaine ; Fonds régional Bretagne ; Yroise, bibliothèque</note>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>   
+      <encodingDesc xml:lang="en">
+         <projectDesc>
+            <p>This project is the final assignement for the TEI-XML class of Master 2 "Technologies numériques appliquées à l'histoire".</p>
+         </projectDesc>
+         <samplingDecl>
+            <p>The corpus was selected for its representativeness of historical Breton-French lexicons and and the interest of having translations to other celtic languages.</p>
+         </samplingDecl>
+      </encodingDesc>
+      
+      <profileDesc xml:lang="en">
+         <langUsage>
+            <language n="1" ident="en">English</language>
+            <language n="2" ident="fr">French</language>
+            <language n="3" ident="mb">Moyen-Breton</language>
+            <language n="4" ident="bv">Bas-Vannet</language>
+            <language n="5" ident="cy">Welsh</language>
+            <language n="6" ident="le">Leon</language>
+         </langUsage>
+         <textDesc n="1">
+            <channel>Written</channel>
+            <constitution>Printed</constitution>
+            <derivation>Digitization of a paper document</derivation>
+            <domain>Linguistics</domain>
+            <factuality>Factual</factuality>
+            <interaction>Non-interactive</interaction>
+            <preparedness>Prepared</preparedness>
+            <purpose>Academic research and digital preservation</purpose>
+         </textDesc>
+      </profileDesc>
+   </teiHeader>
+   
+   
+
+
+   <text>
+      <body>
+         <head>Dictionnaire Breton-François</head>
+         <div xml:id="entrydict_corpus">
+            <head>H</head>
+            <pb n="50"/>
+            <fw>HEN-HIR</fw>
+            <entry xml:id="entry1">
+               <form n="1"><orth>heute</orth></form>
+               <sense><cit type="translation" xml:lang="fr">
+                     <quote>maladroit</quote>
+                  </cit></sense>
+               <form n="2">
+                  <persName>Cillart</persName>
+                  <orth>heude</orth>
+               </form>
+               <sense>
+                  <cit type="translation" xml:lang="le">
+                     <quote>heud, heut</quote>
+                  </cit>
+               </sense>
+            </entry>
+            <entry xml:id="entry2">
+               <form n="1">
+                  <orth>hezeu</orth>
+                  <pron>[heuzou]</pron>
+               </form>
+               <sense>botines</sense>
+            </entry>
+            <entry xml:id="entry3">
+               <form n="1">
+                  <orth>hiaule</orth>
+                  <pron>hèol</pron>
+               </form>
+               <form n="2">
+                  <orth>en yaule</orth>
+               </form>
+
+               <sense>
+                  <cit type="translation" xml:lang="fr">
+                     <quote>le soleil</quote>
+                  </cit>
+                  <cit type="example" xml:lang="fr">
+                     <quote>sau hiaule, euh hiaule</quote>
+                  </cit>
+                  <cit type="translation" xml:lang="fr">
+                     <quote>le lever, le coucher du soleil</quote>
+                  </cit>
+                  <cit type="translation" xml:lang="bv">
+                     <quote>hiôl</quote>
+                  </cit>
+                  <cit type="translation" xml:lang="cy">
+                     <quote>haul</quote>
+                  </cit>
+               </sense>
+            </entry>
+            <entry xml:id="entry4">
+               <form n="1">
+                  <orth>hibil</orth>
+                  <pron>hibil, ibil</pron>
+               </form>
+               <sense>
+                  <cit type="translation" xml:lang="fr">
+                     <quote>cheville</quote>
+                  </cit>
+                  <cit type="translation" xml:lang="bv">
+                     <quote>hibill</quote>
+                     <note>avec l mouillé</note>
+                  </cit>
+                  <cit type="translation" xml:lang="cy">
+                     <quote>ebill</quote>
+                  </cit>
+               </sense>
+            </entry>
+            <entry xml:id="entry5">
+               <form n="1">
+                  <orth>hibil hoarn</orth>
+               </form>
+               <sense>
+                  <cit type="translation" xml:lang="fr">
+                     <quote>goupille</quote>
+                  </cit>
+               </sense>
+            </entry>
+            <entry xml:id="entry6">
+               <form n="1">
+                  <orth>hibil troit</orth>
+               </form>
+               <sense>
+                  <cit type="translation" xml:lang="fr">
+                     <quote>cheville du pied</quote>
+                  </cit>
+               </sense>
+            </entry>
+            <entry xml:id="entry7">
+               <form n="1">
+                  <orth>hiequét er marü</orth>
+                  <pron>[hic, hoquet; hic ar maro]</pron>
+               </form>
+               <sense>
+                  <cit type="translation" xml:lang="fr">
+                     <quote>le hocquet de la mort</quote>
+                  </cit>
+               </sense>
+            </entry>
+            <entry xml:id="entry8">
+               <form n="1">
+                  <orth>higuolenn</orth>
+                  <pron>[higolenn]</pron>
+               </form>
+               <sense>
+                  <cit type="translation" xml:lang="fr">
+                     <quote>pierre à aiguiser</quote>
+                  </cit>
+                  <note>
+                     him jouant le rôle de pronom réfléchi, voir béein, bouttein.
+                  </note>
+               </sense>
+            </entry>
+            <entry xml:id="entry9">
+               <form n="1">
+                  <orth>hineah</orth>
+               </form>
+               <sense>
+                  <cit type="translation" xml:lang="fr">
+                     <quote>ce soir</quote>
+                  </cit>
+                  <cit type="translation" xml:lang="bv">
+                     <quote>hinoac'h</quote>
+                  </cit>
+                  <cit type="translation" xml:lang="cy">
+                     <quote>henoeth</quote>
+                  </cit>
+                  <note>
+                     Cillart hineascouah = 'henoas + gwah = léonard *henoas-vez; pour la terminaison wah, gwah, cf. gwez = wez dans dervez, cy gwaith.
+                  </note>
+               </sense>
+            </entry>
+            <entry xml:id="entry10">
+               <form n="1">
+                  <orth>hinihuë</orth>
+               </form>
+               <sense>
+                  <cit type="translation" xml:lang="fr">
+                     <quote>aujourd'hui</quote>
+                  </cit>
+                  <cit type="translation" xml:lang="cy">
+                     <quote>heddyw</quote>
+                  </cit>
+                  <note>
+                     Original hihiouarh. Cillart hiniouah; cf. hineascouah.
+                  </note>
+               </sense>
+            </entry>
+            <entry xml:id="entry11">
+               <form n="1">
+                  <orth>hiquette</orth>
+               </form>
+               <sense>
+                  <cit type="translation" xml:lang="fr">
+                     <quote>hocquet</quote>
+                  </cit>
+               </sense>
+            </entry>
+            <entry xml:id="entry12">
+               <form n="1">
+                  <orth>hirat</orth>
+               </form>
+               <form n="2">
+                  <orth>hirein</orth>
+               </form>
+               <sense>
+                  <cit type="translation" xml:lang="fr">
+                     <quote>allonger</quote>
+                  </cit>
+               </sense>
+            </entry>
+            <entry xml:id="entry13">
+               <form n="1">
+                  <orth>hirdêt</orth>
+               </form>
+               <sense>
+                  <cit type="translation" xml:lang="fr">
+                     <quote>longueur, étendue</quote>
+                  </cit>
+               </sense>
+            </entry>
+            <entry xml:id="entry14">
+               <form n="1">
+                  <orth>hire</orth>
+               </form>
+               <sense>
+                  <cit type="translation" xml:lang="fr">
+                     <quote>long</quote>
+                  </cit>
+                  <cit type="example" xml:lang="fr">
+                     <quote>re hirre, trop long</quote>
+                  </cit>
+               </sense>
+            </entry>
+            <entry xml:id="entry15">
+               <form n="1">
+                  <orth>hireh</orth>
+               </form>
+               <sense>
+                  <cit type="translation" xml:lang="fr">
+                     <quote>attente, avec impatience, empressement</quote>
+                  </cit>
+                  <cit type="example" xml:lang="fr">
+                     <quote>pebeh hireh em boi hou queleenn, que j'avois d'impatience de vous voir</quote>
+                  </cit>
+                  <cit type="translation" xml:lang="mb">
+                     <quote>hiraez</quote>
+                  </cit>
+                  <cit type="translation" xml:lang="cy">
+                     <quote>hiraeth</quote>
+                  </cit>
+               </sense>
+            </entry>
+            <entry xml:id="entry16">
+               <form n="1">
+                  <orth>hiric</orth>
+               </form>
+               <sense>
+                  <cit type="translation" xml:lang="fr">
+                     <quote>longuet</quote>
+                  </cit>
+               </sense>
+            </entry>
+            <entry xml:id="entry17">
+               <form n="1">
+                  <orth>hiriu</orth>
+               </form>
+               <form n="2">
+                  <orth>hiniu</orth>
+               </form>
+               <form n="3">
+                  <orth>hizihuë</orth>
+               </form>
+               <sense>
+                  <cit type="translation" xml:lang="fr">
+                     <quote>aujourd'hui</quote>
+                  </cit>
+               </sense>
+            </entry>
+            <entry xml:id="entry18">
+               <form n="1">
+                  <orth>hirvoudein</orth>
+                  <pron>hirvoudi</pron>
+               </form>
+               <sense>
+                  <cit type="translation" xml:lang="fr">
+                     <quote>gémir, pleurer, sangloter</quote>
+                  </cit>                                 
+               </sense>
+            </entry>
+            <entry xml:id="entry19">
+               <form n="1">
+                  <orth>hirvoudene</orth>
+               </form>
+               <form n="2">
+                  <orth>hirvoud</orth>
+               </form>
+               <form n="3">
+                  <orth>hirvoudeu</orth>
+                  <gramGrp>
+                     <pos>pluriel</pos>
+                  </gramGrp>
+               </form>
+               <sense>
+                  <cit type="translation" xml:lang="fr">
+                     <quote>gémissement, sanglot</quote>
+                  </cit>
+               </sense>
+            </entry>
+         </div>
+      </body>
+   </text>
+</TEI>
